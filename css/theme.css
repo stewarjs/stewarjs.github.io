@@ -9,8 +9,8 @@ main {
 }
 
 .install_pwa {
-    background: rgb(84,17,126);
-    background: linear-gradient(122deg, rgba(84,17,126,1) 0%, rgba(113,88,106,1) 100%);
+    background: rgb(82, 15, 118);
+    background: linear-gradient(122deg, rgba(84,17,126,1) 0%, rgb(70, 2, 51) 100%);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -86,6 +86,25 @@ main {
     height: auto;
     transition: .3s ease all;
     position: relative;
+}
+
+.header--landing_page__menu__menu-item a:not(.button):before {
+    content: '';
+    width: 0;
+    max-width: 0;
+    height: 1px;
+    background-color: #dddddd;
+    transition: .3s ease width;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.header--landing_page__menu__menu-item a:hover:before, .header--landing_page__menu__menu-item a:focus:before {
+    width: 100%;
+    max-width: 100%;
 }
 
 .landing-page__container {

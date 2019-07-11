@@ -2235,6 +2235,10 @@ a.ui-button:active,
         border-radius: 5px;
     }
 
+    .timeline__label p {
+        padding: 0;
+    }
+
 /* Modal Window
    ========================================================================== */
 
@@ -2917,15 +2921,23 @@ a.ui-button:active,
 	}
 	
 	.timeline:before {
-		left: 19px;
+		display: none;
 	}
+    
+    .timeline__entry {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: 1px solid #eaeaea;
+        padding-top: 2rem;
+    }
 	
 	.timeline__icon {
-		left: -5px;
-	}
+        position: static;
+    }
 	
 	.timeline .timeline__label {
-		margin: 0 0 15px 30px;
+		margin: 0;
 	}
 }
 
