@@ -1,4 +1,4 @@
-const version = 'V0.8';
+const version = 'V0.1';
 const staticCache = version + 'staticfiles';
 
 addEventListener('install', installEvent => {
@@ -10,6 +10,7 @@ addEventListener('install', installEvent => {
                     '/css/theme.css',
                     '/img/app-icons/192.png',
                     '/img/app-icons/512.png',
+                    '/img/app-icons/apple-icon.png',
                     '/img/assets.png',
                     '/img/spinner.gif',
                     '/js/jquery-3.4.1.min.js',
