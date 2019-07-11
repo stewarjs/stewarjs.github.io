@@ -1,4 +1,4 @@
-const version = 'V0.5';
+const version = 'V0.1';
 const staticCache = version + 'staticfiles';
 
 addEventListener('install', installEvent => {
