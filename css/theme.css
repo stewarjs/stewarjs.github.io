@@ -17,7 +17,6 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: .5rem 1rem;
-    display: none;
 }
 
 .install_pwa .heading--small {
