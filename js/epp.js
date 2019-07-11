@@ -64,12 +64,13 @@ $('#add_to_homescreen').on('click', function() {
 
         // Follow what the user has done with the prompt.
         deferredPrompt.userChoice.then(function(choiceResult) {
+            console.log(choiceResult.outcome);
 
-        console.log(choiceResult.outcome);
-
-        // We no longer need the prompt.  Clear it up.
-        deferredPrompt = null;
+            // We no longer need the prompt.  Clear it up.
+            deferredPrompt = null;
         });
+    }else{
+        $.modal({title: 'Install MyEPP', parentID: 'add_to_homescreen', content: '<p>We were unable to install the MyEPP application. This could because you have already installed it or your browser and/or device does not support installing this application.</p><p>For a complete list of supported browsers please see our <a href="compatability.html">compatability sheet</a>.</p>', footer: '<div class="button-group align--center"><button class="button button--gray modal__close">OK</button></div>'});
     }
     if(iOS_PWA_Check()) {
         $.modal({title: 'Install MyEPP', parentID: 'add_to_homescreen', content: '<p>Install the MyEPP application for access to your information on the go!</p><p class="align--center">Just tap <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" role="image" aria-label="the browser action icon" style="width:30px;height:auto;vertical-align:bottom;"><path fill="none" stroke="#2681e8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M17 10l8-8 8 8M25 32V2.333"/><path fill="none" d="M0 0h50v50H0z"/><path d="M17 17H8v32h34V17h-9" fill="none" stroke="#2681e8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg> then select "Add&nbsp;to&nbsp;Home&nbsp;Screen"</p>', footer: '<div class="button-group align--center"><button class="button button--gray modal__close">OK</button></div>'});
