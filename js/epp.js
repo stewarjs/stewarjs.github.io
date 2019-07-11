@@ -1,3 +1,6 @@
+/* debugging purposes only */
+$('.footer').append('<p class="align--center">Version 0.3</p>');
+
 $('#dd__menu, #allotment_schedule').DropDown();
 $( "#wgi" ).on('click', function(event) {
 
@@ -58,6 +61,7 @@ function iOS_PWA_Check() {
 
 $('#add_to_homescreen').on('click', function() {
     if(deferredPrompt) {
+        alert('launch prompt');
         // The user has had a postive interaction with our app and Chrome
         // has tried to prompt previously, so let's show the prompt.
         deferredPrompt.prompt();
