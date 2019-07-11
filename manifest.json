@@ -1,0 +1,20 @@
+{
+	"short_name": "My EPP",
+	"name": "Employee Personal Page",
+	"icons": [
+		{
+			"src": "/img/app-icons/192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/img/app-icons/512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "/index.html",
+	"background_color": "#f3f3f3",
+	"theme_color": "#4e4653",
+	"display": "standalone"
+}

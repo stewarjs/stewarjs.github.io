@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My EPP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#564451">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="My EPP">
+    <link rel="apple-touch-icon" href="/img/app-icons/512.png">
+    <link href="/css/nfc.framework.css" type="text/css" rel="stylesheet">
+    <link href="/css/theme.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<a href="#main" class="skip-content" id="skipnav">Skip to Main Content</a>
+	<header class="header header--landing_page">
+		<h1 class="header__logo align--left">
+			<svg class="logo__icon" viewBox="0 0 24 24" role="presentation">
+				<path fill="#FBFBFB" d="M9.248,11.601c0.45,0.313,1.05,0.313,1.5,0l9.088-5.281c0.236-0.164,0.21-0.518-0.048-0.646l-9.205-3.537
+					c-0.368-0.183-0.802-0.183-1.17,0L0.208,5.674C-0.05,5.801-0.076,6.156,0.16,6.32L9.248,11.601z M19.788,10.811l-2.486-1.233
+					l-5.725,3.327c-0.469,0.309-1.014,0.471-1.579,0.471s-1.11-0.163-1.579-0.471L2.698,9.576l-2.49,1.234
+					c-0.258,0.128-0.284,0.482-0.048,0.646l9.088,6.309c0.45,0.313,1.05,0.313,1.5,0l9.088-6.309
+					C20.072,11.293,20.046,10.939,19.788,10.811z"/>
+			</svg>
+			<span class="logo__text">My EPP</span>
+	   </h1>
+
+        <ul class="header--landing_page__menu">
+            <li class="header--landing_page__menu__menu-item"><a href="/">Home</a></li>
+            <li class="header--landing_page__menu__menu-item"><a href="#">Help</a></li>
+            <li class="header--landing_page__menu__menu-item"><a href="#" class="button button--white">Demo</a></li>
+        </ul>
+
+	</header>
+    <main id="main" class="main layout--one-column" role="main">
+        <div class="landing-page__container">
+            <div class="landing-page__container__banner">
+                <div class="landing-page__container__banner__content">
+                    <div class="landing-page__banner__text">
+                        <p class="landing-page__banner__agency">National Finance Center</p>
+                        <p class="landing-page__banner__app">My Employee Personal Page</p>
+                    </div>
+                    <img class="landing-page__banner__image" src="/img/epp_banner_comp.png" alt="" />
+                </div>
+            </div>
+        </div>
+
+    <h2 class="heading--large align--center" style="margin: 3rem">Your Data, Your Page, Your Portal</h2>
+        
+    <section class="landing-page__section flex-box" aria-label="Sign into MyEPP">
+        <div class="card card--sign-in margin--auto">
+            
+            <h3 class="heading--medium align--center">Choose a Sign in Option</h3>
+
+            <p>MyEPP allows users the option of choosing to sign in with their normal MyEPP credentials or their eAuthentication account if they have one. Please choose a sign in option to proceed.</p>
+
+            <a href="warning.html" class="button button--gray button--full-width align--center">Sign in with eAuth</a>
+            <a href="login.php" class="button button--gray button--full-width align--center">Sign in with EPP Account</a>
+
+        </div>
+        <div class="margin--auto">
+            <h3 class="heading--medium">Need Assistance?</h3>
+            <ul class="graphic-list">
+                <li class="graphic-list__item">
+                    <img src="img/a11y.svg" class="graphic-list__item__image" alt="" />
+                    <div>
+                        Need assistance with accessibility?<br>
+                        See the <a href="#">accessibility section</a> of the MyEPP Procedure Manual.
+                    </div>
+                </li>
+                <li class="graphic-list__item">
+                    <img src="img/keys.svg" class="graphic-list__item__image" alt="" />
+                    <div>
+                        Need assistance with logging in?<br>
+                        You can <a href="#">submit a ticket through ServiceNow</a>.
+                    </div>
+                </li>
+                <li class="graphic-list__item">
+                    <img src="img/benefits.svg" class="graphic-list__item__image" alt="" />
+                    <div>
+                        Have questions about your payroll or benefits?<br>
+                        Contact your Personnel or HR Office.
+                    </div>
+                </li>
+                <li class="graphic-list__item">
+                    <img src="img/phone_gears.svg" class="graphic-list__item__image" alt="" />
+                    <div>
+                        Experiencing difficulty using the app?<br>
+                        You can <a href="#">submit a ticket through ServiceNow</a>.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <aside class="install_pwa">
+        <div style="margin: auto">
+            <h1 class="heading--small">Streamline your MyEPP Experience!</h1>
+            <p>Get our free app and access your information on the go!</p>
+        </div>
+        <button id="add_to_homescreen" class="button button--white">Install MyEPP</button>
+    </aside>
+    <section class="landing-page__section" aria-labelledby="did_you_know">
+        <h3 id="did_you_know" class="heading--small">Did you know?</h3>
+        <ul class="news-box">
+            <li class="news-box__article">
+                <img src="img/news/maintenance.jpg" alt="" />
+                <h4 class="heading--label">System Maintenance</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur imperdiet ornare. Mauris ornare bibendum nisl non sollicitudin. Phasellus justo metus, convallis at velit sit amet, vulputate semper magna. Donec semper ut enim ut vestibulum.</p>
+                <p><a href="#">View the maintenance schedule</a></p>
+            </li>
+            <li class="news-box__article">
+                <img src="img/news/memorialday.jpg" alt="" />
+                <h4 class="heading--label">Memorial Day Holiday</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur imperdiet ornare. Mauris ornare bibendum nisl non sollicitudin. Phasellus justo metus, convallis at velit sit amet, vulputate semper magna. Donec semper ut enim ut vestibulum.</p>
+                <p><a href="#">View the holiday schedule</a></p>
+            </li>
+            <li class="news-box__article">
+                <img src="img/news/payincrease.jpg" alt="" />
+                <h4 class="heading--label">Retroactive Pay Increase Pay Period 07</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur imperdiet ornare. Mauris ornare bibendum nisl non sollicitudin. Phasellus justo metus, convallis at velit sit amet, vulputate semper magna. Donec semper ut enim ut vestibulum.</p>
+                <p><a href="#">What can I expect?</a></p>
+            </li>
+        </ul>
+    </section>
+    <section class="landing-page__section flex-box" aria-labelledby="control-your-data">
+        <div class="margin--auto">
+            <h3 class="heading--small" id="control-your-data">Take control of your data</h3>
+            <ul class="graphic-list">
+                <li class="graphic-list__item">
+                    <img src="img/wallet.svg" class="graphic-list__item__image" alt="" />
+                    <div>
+                        <strong>Plan for the future</strong><br>
+                        Integer convallis ac ipsum at fermentum. Suspendisse at auctor purus, eget volutpat leo. Donec vulputate pretium fringilla. Duis malesuada quis tortor vitae dapibus.
+                    </div>
+                </li>
+                <li class="graphic-list__item">
+                    <img src="img/export.svg" class="graphic-list__item__image" alt="" />
+                    <div>
+                        <strong>Export W-2 Statements</strong><br>
+                        Praesent nisi dolor, volutpat nec ex in, placerat sagittis mi. Praesent eu facilisis ante. Pellentesque at sem luctus, elementum tellus vitae, porttitor sem.
+                    </div>
+                </li>
+                <li class="graphic-list__item">
+                    <img src="img/mobile_payments.svg" class="graphic-list__item__image" alt="" />
+                    <div>
+                        <strong>Schedule Multiple Allotments</strong><br>
+                        Mauris vitae mollis lorem. Vestibulum iaculis condimentum augue eu viverra. Donec in consequat mi. Mauris imperdiet rutrum lacus vel maximus. 
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <img src="img/data_analysis.svg" class="margin--auto" style="max-width: 600px;width:100%" alt="" />
+    </section>
+        
+        
+    
+    </main>
+    <footer id="footer" class="footer">
+        <ul class="footer__menu">
+			<li class="footer__menu__item"><a href="https://nfc.usda.gov/">NFC Web Site</a></li>
+            <li class="footer__menu__item"><a href="https://nfc.usda.gov/AdditionalResources/accessibility.php" target="_blank">Accessibility</a></li>
+            <li class="footer__menu__item"><a href="https://www.nfc.usda.gov/AdditionalResources/privacy_policy.php">Privacy Policy</a></li>
+            <li class="footer__menu__item"><a href="https://www.nfc.usda.gov/AdditionalResources/information_quality.php" target="_blank">Information Quality</a></li>
+            <li class="footer__menu__item"><a href="https://www.usda.gov" target="_blank">USDA</a></li>
+            <li class="footer__menu__item"><a href="http://www.usa.gov" target="_blank">USA.gov</a></li>
+	        <li class="footer__menu__item"><a href="https://www.whitehouse.gov" target="_blank">Whitehouse.gov</a></li>
+        </ul>
+
+    </footer>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+	<script src="/js/nfc.framework.js"></script>
+	<script src="/js/epp.js"></script>
+	<script>
+		$('#dd__menu').DropDown();
+	</script>
+</body>
+</html>
