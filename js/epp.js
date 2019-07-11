@@ -38,7 +38,6 @@ window.addEventListener('beforeinstallprompt', function(e) {
 
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
-  document.querySelector('.install_pwa').style.display = 'flex';
   return false;
 });
 
