@@ -2251,7 +2251,7 @@ a.ui-button:active,
     margin: auto;
 	background: #333333;
     background: rgba(51, 51, 51, 0.74);
-    z-index: 100;
+    z-index: 1000;
 	opacity: 0;
 	overflow-y: scroll;
     transition: .3s ease opacity;
