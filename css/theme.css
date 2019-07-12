@@ -3,7 +3,7 @@ body {
 	/* IE Fix */
 	-ms-grid-rows: max-content minmax(max-content, 2fr) minmax(max-content, min-content);
 }
-
+.test_example {font-size 1.5rem;color:purple;}
 main {
     padding-bottom: 3rem;
 }
