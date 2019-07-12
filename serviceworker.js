@@ -1,18 +1,23 @@
-const version = 'V0.6';
+const version = 'V0.1';
 const staticCache = version + 'staticfiles';
 
 addEventListener('install', installEvent => {
     installEvent.waitUntil(
         caches.open(staticCache)
             .then(staticCache => {
-                return staticCache.addAll([
-                    '/css/nfc.framework.css',
-                    '/css/theme.css',
+                // Cache if possible
+                staticCache.addAll([
                     '/img/app-icons/192.png',
                     '/img/app-icons/512.png',
                     '/img/app-icons/apple-icon.png',
                     '/img/assets.png',
                     '/img/spinner.gif',
+                ]);
+                
+                // Definitely cache the important stuff
+                return staticCache.addAll([
+                    '/css/nfc.framework.css',
+                    '/css/theme.css',
                     '/js/jquery-3.4.1.min.js',
                     '/js/nfc.framework.js',
                     '/js/epp.js',
