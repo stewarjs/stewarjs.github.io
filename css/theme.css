@@ -3,14 +3,14 @@ body {
 	/* IE Fix */
 	-ms-grid-rows: max-content minmax(max-content, 2fr) minmax(max-content, min-content);
 }
-.test_example {font-size 1.5rem;color:purple;}
+
 main {
     padding-bottom: 3rem;
 }
 
 .install_pwa {
     background: rgb(82, 15, 118);
-    background: linear-gradient(122deg, rgba(84,17,126,1) 0%, rgb(70, 2, 51) 100%);
+    background: linear-gradient(122deg, rgb(136, 49, 179) 0%, rgb(88, 70, 97) 100%);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -34,7 +34,8 @@ main {
 }
 
 .header--landing_page, .header__logo {
-	background-color: #71586a;
+	/*background-color: #71586a;*/
+	background-color: #584661;
 }
 
 .header--landing_page__menu {
@@ -56,7 +57,8 @@ main {
 
 .header--landing_page__menu__menu-item .button.button--white {
     padding: 10px 30px;
-    background-color: #4a2f42;
+    /*background-color: #4a2f42;*/
+    background-color: #412b4c;
     color: #ffffff;
     border: 1px solid transparent;
     text-decoration: none;
@@ -108,7 +110,8 @@ main {
 }
 
 .landing-page__container {
-    background: #4e4653;
+    /*background: #4e4653;*/
+    background: #584661;
     color: #ffffff;
     padding: 0;
     overflow: hidden;
@@ -218,7 +221,8 @@ main {
 }
 
 .menu__item .icon {
-    fill: #71586a;
+    /*fill: #71586a;*/
+    fill: #584661;
 }
 
 .menu__item:hover, .menu__item:focus, .menu__item--active {
@@ -240,7 +244,8 @@ main {
 }
 
 .card__heading {
-    background-color: #71586a;
+    /*background-color: #71586a;*/
+    background-color: #584661;
 }
 
 .card__heading abbr {
