@@ -1,6 +1,13 @@
-const version = 'V0.3';
+const version = 'V0.4';
 const staticCache = version + 'staticfiles';
 
+/* ==============================================
+//
+//  Main ServiceWorker
+//
+================================================*/
+
+// Cache required assets during the install
 addEventListener('install', installEvent => {
     installEvent.waitUntil(
         caches.open(staticCache)
@@ -45,6 +52,8 @@ addEventListener('activate', activateEvent => {
     );
 });
 
+// Check the cache first, then fallback to the network for all files except HTML.
+// If an HTML file cannot be reached via the network, fallback to the offline page.
 addEventListener('fetch', fetchEvent => {
     const request = fetchEvent.request;
     if(request.headers.get('Accept').includes('text/html')) {
