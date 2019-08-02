@@ -1,5 +1,5 @@
 /* debugging purposes only */
-$('.footer').append('<p class="align--center" style="color:#68696A;font-size:.8rem;">Version 0.3</p>');
+$('.footer').append('<p class="align--center" style="color:#68696A;font-size:.8rem;">Version 0.4</p>');
 
 $('#dd__menu, #allotment_schedule').DropDown();
 $( "#wgi" ).on('click', function(event) {
@@ -42,15 +42,17 @@ window.addEventListener('beforeinstallprompt', function(e) {
     // Stash the event so it can be triggered later.
     deferredPrompt = e;
 
-    if(deferredPrompt == 'undefined') {
-        // Either the app has been installed or is not supported by the browser version
-        document.querySelector('.install_pwa').style.display = 'none';
-    }else if(iOS_PWA_Check() == true) {
-        // No way to tell if the app is installed for iOS so always show
-        document.querySelector('.install_pwa').style.display = 'flex';
-    }else{
-        // App hasn't been installed and we have detected support!
-        document.querySelector('.install_pwa').style.display = 'flex';
+    if(document.querySelector('.install_pwa')) {
+       if(deferredPrompt == 'undefined' && iOS_PWA_Check() !== true) {
+            // Either the app has been installed or is not supported by the browser version
+            document.querySelector('.install_pwa').style.display = 'none';
+        }else if(iOS_PWA_Check() === true) {
+            // No way to tell if the app is installed for iOS so always show
+            document.querySelector('.install_pwa').style.display = 'flex';
+        }else{
+            // App hasn't been installed and we have detected support!
+            document.querySelector('.install_pwa').style.display = 'flex';
+        }
     }
     return false;
 });
