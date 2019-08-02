@@ -8,6 +8,10 @@ main {
     padding-bottom: 3rem;
 }
 
+abbr {
+    text-decoration: none;
+}
+
 .install_pwa {
     background: rgb(82, 15, 118);
     background: linear-gradient(122deg, rgb(136, 49, 179) 0%, rgb(88, 70, 97) 100%);
@@ -211,6 +215,10 @@ main {
     margin: 0 2rem 0 0;
 }
 
+.menu, .card {
+    font-size: 1rem;
+}
+
 .menu__container {
     background-color: #efe8e9;
     color: #564451;
@@ -252,29 +260,137 @@ main {
 	margin: 0 5px;
 }
 
-.my-dates, .my-salary {
+.my-dates, .latest-EL {
 	list-style: none;
 	padding: 0
 }
 
-.my-dates li, .my-salary li {
+.my-dates li, .latest-EL li {
 	margin: 1rem 0;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 }
 
 .my-dates .icon {
-	margin: 0 10px;
-    width: 20px;
-    height: 20px;
-    fill: #8694ad;
+	margin: 0 1rem;
+    width: 30px;
+    height: 30px;
+    fill: #767676;
 }
 
-.my-salary .icon {
-	margin: 0 10px;
-    width: 20px;
-    height: 20px;
-    fill: #1bbf78;
+.latest-EL {
+    margin: 0 0 2rem;
+}
+
+.latest-EL li {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 0 1rem;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.latest-EL__value {
+    margin: 1rem 1rem 0;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.latest-EL__value--leave {
+    font-size: .8rem;
+    color: #4d4d4d;
+}
+
+.latest-EL__value__accrued {
+    display: block;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.latest-EL__property {
+    margin: 1rem auto 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.latest-EL__icon {
+    margin: 0 1rem;
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    fill: #ffffff;
+    background-color: #1bbf78;
+    border-radius: 90%;
+    flex-shrink: 0;
+    overflow: visible;
+    box-shadow: 0 3px 11px -3px rgb(88, 88, 88);
+}
+
+.latest-EL__icon--blue {
+    background-color: #2496c1;
+}
+
+.latest-EL__timeframe {
+    text-align: center;
+    color: #767676;
+}
+
+.self-service-history {
+    margin: 1rem;
+    padding: 0;
+}
+
+.self-service-history__action--applied .self-service-history__action__icon {
+    background-color: #1bbf78;
+}
+
+.self-service-history__action--applied .self-service-history__action__info {
+    color: #000000;
+}
+
+.self-service-history__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    border-radius: 3px;
+    color: #767676;
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.self-service-history__action:last-child {
+    border: none;    
+}
+
+.self-service-history__action__icon {
+    margin: 0 1rem 0 0;
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    fill: #ffffff;
+    background-color: #767676;
+    border-radius: 90%;
+    flex-shrink: 0;
+    box-shadow: 0 3px 11px -3px rgb(88, 88, 88);
+}
+
+.self-service-history__action__info {
+    margin: 10px auto 10px 0 !important;
+    color: #767676;
+    font-size: 1rem;
+}
+
+.self-service-history__action__name, .self-service-history__action__status {
+    margin: 0;
+    padding: 0 !important;
+}
+
+.self-service-history__button {
+    margin: 0 0 1rem;
 }
 
 .page__header .button {
@@ -282,10 +398,14 @@ main {
 }
 
 .allotment-list {
-	margin: 0 20px;
+	margin: 1rem;
 	list-style-position: inside;
 	counter-reset: list-cards;
 	padding: 0;
+}
+
+.allotment-list--no-boxshadow .allotment-list__allotment {
+    box-shadow: none;
 }
 
 .allotment-list__allotment {
@@ -323,7 +443,7 @@ main {
 	content: counter(list-cards);
 	counter-increment: list-cards;
 	text-align: center;
-	background-color: #28989c;
+	background-color: #584661;
 	color: #ffffff;
 	font-size: 1.2rem;
 	margin: 0 20px 0 0;
@@ -339,7 +459,7 @@ main {
 .allotment-list .button {margin: 0;width:50px;position: relative}
 
 .allotment-list__info {
-	margin: 10px auto 10px 0;
+	margin: 10px auto 10px 0 !important;
 }
 
 .allotment-list__allotment--pending:before {
