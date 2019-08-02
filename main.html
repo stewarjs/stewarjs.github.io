@@ -99,8 +99,75 @@
 	<main class="layout--two-column" id="main">
 	
 		<div class="masonry-grid masonry-grid--two-column">
-			
-			<div class="masonry-grid__cell">
+            
+            <div class="masonry-grid__cell">   
+				<div class="card">
+				<h2 class="card__heading">Lastest <abbr title="Earnings and Leave">E&amp;L</abbr> Summary</h2>
+				<ul class="latest-EL">
+					<li><span class="latest-EL__property"><svg class="latest-EL__icon" role="presentation"><use xlink:href="#framework_svg_money" /></svg> Latest Salary</span> <span class="latest-EL__value">$41,377.00 at Grade 07 Step 03</span></li>
+					<li><span class="latest-EL__property"><svg class="latest-EL__icon" role="presentation"><use xlink:href="#framework_svg_payment" /></svg> Payment for Pay Period 12</span> <span class="latest-EL__value">$415.93</span></li>
+					<li><span class="latest-EL__property"><svg class="latest-EL__icon latest-EL__icon--blue" role="presentation"><use xlink:href="#framework_svg_calendar" /></svg> Annual Leave</span> <span class="latest-EL__value latest-EL__value--leave"><span class="latest-EL__value__accrued">Accrued 6 Hours</span> Total: 44.00 Hours</span></li>
+					<li><span class="latest-EL__property"><svg class="latest-EL__icon latest-EL__icon--blue" role="presentation"><use xlink:href="#framework_svg_calendar" /></svg> Sick Leave</span> <span class="latest-EL__value latest-EL__value--leave"><span class="latest-EL__value__accrued">Accrued 8 Hours</span> Total: 201.25 Hours</span></li>
+                    <li><span class="latest-EL__property"><svg class="latest-EL__icon latest-EL__icon--blue" role="presentation"><use xlink:href="#framework_svg_calendar" /></svg> Compensatory Leave</span> <span class="latest-EL__value latest-EL__value--leave"><span class="latest-EL__value__accrued">Accrued 0 Hours</span> Total 3.25 Hours</span></li>
+				</ul>
+                    
+                <p class="latest-EL__timeframe">Your latest <abbr title="Earnings and Leave">E&amp;L</abbr> summary covers your time worked from <strong>06/10/2018</strong> to <strong>06/23/2018</strong>. The offical pay date occured on <strong>07/05/2018</strong>.</p>
+                    
+				<div class="button-group align--center">
+					<a href="#" class="button button--blue">View 2018 Pay Period 12 Statement</a>
+				</div>
+				</div>
+			</div>
+            
+            <div class="masonry-grid__cell">   
+				<div class="card">
+                    <h2 class="card__heading">Self-Service History</h2>
+                    <ul class="self-service-history">
+                        <li class="self-service-history__action">
+                            <svg class="self-service-history__action__icon" role="presentation"><use xlink:href="#framework_svg_cycle" /></svg>
+                            <div class="self-service-history__action__info">
+                                <p class="self-service-history__action__name" id="hash_id_1">Health Insurance</p>
+                                <p class="self-service-history__action__status">Pending: PP 01, 2019</p>
+                            </div>
+                            <button class="self-service-history__button button button--gray" aria-describedby="hash_id_1">View Changes</button>
+                        </li>
+                        <li class="self-service-history__action">
+                            <svg class="self-service-history__action__icon" role="presentation"><use xlink:href="#framework_svg_cycle" /></svg>
+                            <div class="self-service-history__action__info">
+                                <p class="self-service-history__action__name" id="hash_id_2">Direct Deposit</p>
+                                <p class="self-service-history__action__status">Pending: PP 20, 2018</p>
+                            </div>
+                            <button class="self-service-history__button button button--gray" aria-describedby="hash_id_2">View Changes</button>
+                        </li>
+                        <li class="self-service-history__action self-service-history__action--applied">
+                            <svg class="self-service-history__action__icon" role="presentation"><use xlink:href="#framework_svg_check" /></svg>
+                            <div class="self-service-history__action__info">
+                                <p class="self-service-history__action__name" id="hash_id_3">Direct Deposit</p>
+                                <p class="self-service-history__action__status">Effective: PP 10, 2017</p>
+                            </div>
+                            <button class="self-service-history__button button button--gray" aria-describedby="hash_id_3">View Changes</button>
+                        </li>
+                        <li class="self-service-history__action self-service-history__action--applied">
+                            <svg class="self-service-history__action__icon" role="presentation"><use xlink:href="#framework_svg_check" /></svg>
+                            <div class="self-service-history__action__info">
+                                <p class="self-service-history__action__name" id="hash_id_4">Financial Allotment</p>
+                                <p class="self-service-history__action__status">Effective: PP 15, 2015</p>
+                            </div>
+                            <button class="self-service-history__button button button--gray" aria-describedby="hash_id_4">View Changes</button>
+                        </li>
+                        <li class="self-service-history__action self-service-history__action--applied">
+                            <svg class="self-service-history__action__icon" role="presentation"><use xlink:href="#framework_svg_check" /></svg>
+                            <div class="self-service-history__action__info">
+                                <p class="self-service-history__action__name" id="hash_id_5">Federal Tax (W-4)</p>
+                                <p class="self-service-history__action__status">Effective: PP 04, 2015</p>
+                            </div>
+                            <button class="self-service-history__button button button--gray" aria-describedby="hash_id_5">View Changes</button>
+                        </li>
+                    </ul>
+				</div>
+			</div>
+            
+            <div class="masonry-grid__cell">
 				<div class="card">
 					<h2 class="card__heading">News and Announcements</h2>
 					<p>If you have a question about this data or believe it has errors, please contact your servicing Human Resources organization for assistance.</p>
@@ -129,25 +196,12 @@
 				</div>
 			</div>
 			
-			<div class="masonry-grid__cell">   
-				<div class="card">
-				<h2 class="card__heading">Lastest <abbr title="Earnings and Leave">E&amp;L</abbr> Summary</h2>
-				<ul class="my-salary">
-					<li><svg role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon"><path d="M8.3 17c-.4 0-.9-.2-1.1-.6l-3.6-4.7A1.4 1.4 0 1 1 5.8 10l2.4 3.1L14 3.7A1.4 1.4 0 0 1 16.5 5l-7 11.2c-.3.4-.7.7-1.1.7h-.1z"/></svg> <span>Your latest salary is $74,574.00 at Grade 12 Step 02.</span></li>
-					<li><svg role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon"><path d="M8.3 17c-.4 0-.9-.2-1.1-.6l-3.6-4.7A1.4 1.4 0 1 1 5.8 10l2.4 3.1L14 3.7A1.4 1.4 0 0 1 16.5 5l-7 11.2c-.3.4-.7.7-1.1.7h-.1z"/></svg> <span>Your net payment was $1,820.08 for Pay Period 19, as of 10/12/2017.</span></li>
-				</ul>
-				<div class="button-group align--center">
-					<a href="#" class="button button--blue">View 2017 Pay Period 19 Statement</a>
-				</div>
-				</div>
-			</div>
-			
 
 			<div class="masonry-grid__cell">   
 				<div class="card">
 				<h2 class="card__heading">My Dates</h2>
 				<ul class="my-dates">
-					<li><svg class="icon" role="presentation"><use xlink:href="#framework_svg_info" /></svg> <span>My Retirement SCD Date is 12/07/2010.</span></li>
+					<li><svg class="icon" role="presentation"><use xlink:href="#framework_svg_info" /></svg> <span>My Retirement SCD Date is 12/10/2007.</span></li>
 					<li><svg class="icon" role="presentation"><use xlink:href="#framework_svg_info" /></svg> <span>My Last WGI Date is 11/22/2009.</span></li>
 				</ul>
 				<p><a href="#" id="wgi" role="button">Why do I only see the date of my last within grade increase (WGI)?</a></p>
