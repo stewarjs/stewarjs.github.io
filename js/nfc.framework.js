@@ -4799,7 +4799,7 @@ var widgetsDatepicker = $.datepicker;
 	}
 	
 	var file     = getScriptPath() + '/img/icons.html',
-        revision = 3;
+        revision = 2;
 		
  
     if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
