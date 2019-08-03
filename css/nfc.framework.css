@@ -611,12 +611,11 @@ header a:hover .icon {
 	transition: ease background .3s, color .3s;
 }
 
-.button--has-icon-left {
-	padding-left: 10px;
-}
-
-.button--has-icon-right {
-	padding-right: 10px;
+.button--has-icon-left, .button--has-icon-right {
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .button--has-icon-left .icon {

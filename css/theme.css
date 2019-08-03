@@ -617,6 +617,15 @@ abbr {
 	}
 }
 @media (max-width: 500px) {
+    .latest-EL__property {
+        width: 100%;
+    }
+
+    .latest-EL__value {
+        margin: .5rem 1rem 0 auto;
+        text-align: right;
+    }
+    
 	#dd__menu__custom-select[data-icon]:before {
 		content: attr(data-icon);
 		position: absolute;
