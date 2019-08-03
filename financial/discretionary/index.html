@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Discretionary Allotments | My EPP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#4e4653">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="My EPP">
+    <link rel="apple-touch-icon" href="/img/app-icons/512.png">
+    <link href="/css/nfc.framework.css" type="text/css" rel="stylesheet">
+    <link href="/css/theme.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<a href="#nav" class="skip-content" id="skipheader">Skip to Navigation</a>
+    <a href="#main" class="skip-content" id="skipnav">Skip to Main Content</a>
+	<header class="header">
+		<h1 class="header__logo align--left">
+			<svg class="logo__icon" viewBox="0 0 24 24" role="presentation">
+				<path fill="#FBFBFB" d="M9.248,11.601c0.45,0.313,1.05,0.313,1.5,0l9.088-5.281c0.236-0.164,0.21-0.518-0.048-0.646l-9.205-3.537
+					c-0.368-0.183-0.802-0.183-1.17,0L0.208,5.674C-0.05,5.801-0.076,6.156,0.16,6.32L9.248,11.601z M19.788,10.811l-2.486-1.233
+					l-5.725,3.327c-0.469,0.309-1.014,0.471-1.579,0.471s-1.11-0.163-1.579-0.471L2.698,9.576l-2.49,1.234
+					c-0.258,0.128-0.284,0.482-0.048,0.646l9.088,6.309c0.45,0.313,1.05,0.313,1.5,0l9.088-6.309
+					C20.072,11.293,20.046,10.939,19.788,10.811z"/>
+			</svg>
+			<span class="logo__text">My EPP</span>
+	   </h1>
+	   <div class="header__menu">
+
+			<select id="dd__menu" data-update="false" data-icon="JH">
+				<option value="" selected disabled>Joseph Q. Harley</option>
+				<option value="home" data-href="/main.html" data-svg="framework_svg_home">Home</option>
+				<option value="calendar" data-href="/calendar/epp.php" data-svg="framework_svg_calendar">Payroll Calendar</option>
+				<option value="settings" data-svg="framework_svg_settings" data-href="settings.html">Settings</option>
+				<option value="contact" data-svg="framework_svg_mail">Contact</option>
+				<option value="help" data-svg="framework_svg_help">Help</option>
+				<option value="logout" class="custom-select__divider" data-svg="framework_svg_logout">Logout</option>
+			</select>
+
+		</div>
+
+	</header>
+	<nav id="nav" class="menu__container">
+	   <dl class="menu" role="menu">
+                <dt role="menuitem" aria-expanded="false" class="menu__item" tabindex="0"><svg class="icon" role="presentation"><use xlink:href="#framework_svg_info" /></svg><span class="menu__item__label">Benefits</span></dt>
+                <dd>
+                	<dl role="menu" class="submenu">
+                    	<dt class="submenu__label">Benefits</dt>
+                        	<dd class="submenu__item"><a href="#">Benefits Statement</a></dd>
+							<dd class="submenu__item"><a href="#">Leave</a></dd>
+                            <dd class="submenu__item"><a href="#">Thrift Savings Plan</a></dd>
+							<dd class="submenu__item"><a href="#">TSP Catchup</a></dd>
+                    </dl>
+                </dd>
+                
+                <dt role="menuitem" aria-expanded="false" class="menu__item" tabindex="0"><svg class="icon" role="presentation"><use xlink:href="#framework_svg_payment" /></svg><span class="menu__item__label">Financial</span></dt>
+                <dd>
+                	<dl role="menu" class="submenu">
+                    	<dt class="submenu__label">Financial</dt>
+							<dd class="submenu__item"><a href="#">Debt Managment</a></dd>
+                        	<dd class="submenu__item"><a href="#">Direct Deposit</a></dd>
+							<dd class="submenu__item"><a href="../discretionary/">Discretionary Allotments</a></dd>
+                            <dd class="submenu__item"><a href="../earnings/"><abbr title="Earnings and Leave">E&amp;L</abbr> Statement</a></dd>
+                            <dd class="submenu__item"><a href="#">Financial Allotments</a></dd>
+                            <dd class="submenu__item"><a href="#">OGE-278</a></dd>
+                            <dd class="submenu__item"><a href="#">Travel</a></dd>
+                            <dd class="submenu__item"><a href="#">W-2</a></dd>
+                    </dl>
+                </dd>
+                
+                <dt role="menuitem" aria-expanded="false" class="menu__item" tabindex="0"><svg class="icon" role="presentation"><use xlink:href="#framework_svg_benefits" /></svg><span class="menu__item__label">Insurance</span></dt>
+                <dd>
+                	<dl role="menu" class="submenu">
+                    	<dt class="submenu__label">Insurance</dt>
+                        	<dd class="submenu__item"><a href="#">Health Insurance</a></dd>
+                            <dd class="submenu__item"><a href="#">Health Savings Account</a></dd>
+                            <dd class="submenu__item"><a href="#">1095-C</a></dd>
+                    </dl>
+                </dd>
+
+                <dt role="menuitem" aria-expanded="false" class="menu__item" tabindex="0"><svg class="icon" role="presentation"><use xlink:href="#framework_svg_money" /></svg><span class="menu__item__label">Taxes</span></dt>
+                <dd>
+                	<dl role="menu" class="submenu">
+                    	<dt class="submenu__label">Taxes</dt>
+                        	<dd class="submenu__item"><a href="#">Federal Tax (W-4)</a></dd>
+                            <dd class="submenu__item"><a href="#">State Tax</a></dd>
+                    </dl>
+                </dd>
+                
+                
+		</dl>
+	</nav>
+	<main class="layout--two-column" id="main">
+		<div class="page__header">
+			<h2 class="heading--small">Discretionary Allotments</h2>
+			<a class="button button--blue" href="discretionary_new.html">New Allotment</a>
+		</div>
+		<ol class="allotment-list">
+			
+			<li class="allotment-list__allotment allotment-list__allotment--pending">
+				<div class="allotment-list__info">
+					<p class="allotment-list__allotment__name" id="hash_id_1">Patent and Trademark Office FCU</p>
+					<p>Pending: Electronic Funds Transfer</p>
+				</div>
+				<span class="allotment-list__allotment__amount">$25.45</span>
+				<button id="jeds" class="button button--icon allotment_info_button" aria-describedby="hash_id_1">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon"><path d="M10 .4a9.6 9.6 0 1 0 0 19.2A9.6 9.6 0 0 0 10 .4zm.9 3.5c1 0 1.2.5 1.2 1.1 0 .8-.6 1.5-1.7 1.5-.9 0-1.3-.4-1.3-1.2 0-.6.6-1.4 1.8-1.4zM8.5 15.8c-.6 0-1.1-.4-.7-2.1l.8-3V10l-1.5.6-.4-.5c1.6-1.3 3.4-2 4.1-2 .7 0 .8.7.5 1.9l-.9 3.1c-.1.6 0 .8.1.8.2 0 .8-.2 1.4-.7l.4.5a6.7 6.7 0 0 1-3.8 2z"/></svg>
+					<span class="button--icon__text">View Info</span>
+				</button>
+			</li>
+			<li class="allotment-list__allotment">
+				<div class="allotment-list__info">
+					<p class="allotment-list__allotment__name" id="hash_id_2">Phone Bill</p>
+					<p>Electronic Funds Transfer</p>
+				</div>
+				<span class="allotment-list__allotment__amount">$45.15</span>
+				<button id="qwe" class="button button--icon allotment_info_button" aria-describedby="hash_id_2">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon"><path d="M10 .4a9.6 9.6 0 1 0 0 19.2A9.6 9.6 0 0 0 10 .4zm.9 3.5c1 0 1.2.5 1.2 1.1 0 .8-.6 1.5-1.7 1.5-.9 0-1.3-.4-1.3-1.2 0-.6.6-1.4 1.8-1.4zM8.5 15.8c-.6 0-1.1-.4-.7-2.1l.8-3V10l-1.5.6-.4-.5c1.6-1.3 3.4-2 4.1-2 .7 0 .8.7.5 1.9l-.9 3.1c-.1.6 0 .8.1.8.2 0 .8-.2 1.4-.7l.4.5a6.7 6.7 0 0 1-3.8 2z"/></svg>
+					<span class="button--icon__text">View Info</span>
+				</button>
+			</li>
+			<li class="allotment-list__allotment">
+				<div class="allotment-list__info">
+					<p class="allotment-list__allotment__name" id="hash_id_3">Hospital Payments</p>
+					<p>Check by Mail</p>
+				</div>
+				<span class="allotment-list__allotment__amount">$151.79</span>
+				<button id="jgk" class="button button--icon allotment_info_button" aria-describedby="hash_id_3">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon"><path d="M10 .4a9.6 9.6 0 1 0 0 19.2A9.6 9.6 0 0 0 10 .4zm.9 3.5c1 0 1.2.5 1.2 1.1 0 .8-.6 1.5-1.7 1.5-.9 0-1.3-.4-1.3-1.2 0-.6.6-1.4 1.8-1.4zM8.5 15.8c-.6 0-1.1-.4-.7-2.1l.8-3V10l-1.5.6-.4-.5c1.6-1.3 3.4-2 4.1-2 .7 0 .8.7.5 1.9l-.9 3.1c-.1.6 0 .8.1.8.2 0 .8-.2 1.4-.7l.4.5a6.7 6.7 0 0 1-3.8 2z"/></svg>
+					<span class="button--icon__text">View Info</span>
+				</button>
+			</li>
+			
+		</ol>
+	</main>
+    <footer id="footer" class="footer">
+        <ul class="footer__menu">
+			<li class="footer__menu__item"><a href="https://nfc.usda.gov/">NFC Web Site</a></li>
+            <li class="footer__menu__item"><a href="https://nfc.usda.gov/AdditionalResources/accessibility.php" target="_blank">Accessibility</a></li>
+            <li class="footer__menu__item"><a href="https://www.nfc.usda.gov/AdditionalResources/privacy_policy.php">Privacy Policy</a></li>
+            <li class="footer__menu__item"><a href="https://www.nfc.usda.gov/AdditionalResources/information_quality.php" target="_blank">Information Quality</a></li>
+            <li class="footer__menu__item"><a href="https://www.usda.gov" target="_blank">USDA</a></li>
+            <li class="footer__menu__item"><a href="http://www.usa.gov" target="_blank">USA.gov</a></li>
+	        <li class="footer__menu__item"><a href="https://www.whitehouse.gov" target="_blank">Whitehouse.gov</a></li>
+        </ul>
+
+    </footer>
+	<script src="/js/jquery-3.4.1.min.js"></script>
+	<script src="/js/nfc.framework.js"></script>
+    <script src="/js/epp.js"></script>
+</body>
+</html>
