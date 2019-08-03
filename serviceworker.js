@@ -1,4 +1,4 @@
-const version = 'V0.2';
+const version = 'V0.3';
 const staticCache = version + 'staticfiles';
 
 /* ==============================================
@@ -7,8 +7,13 @@ const staticCache = version + 'staticfiles';
 //
 ================================================*/
 
-// Cache required assets during the install
+// Install ServiceWorker
 addEventListener('install', installEvent => {
+    
+    // If the ServiceWorker updates, activate immedietly
+    self.skipWaiting();
+    
+    // Cache Assets
     installEvent.waitUntil(
         caches.open(staticCache)
             .then(staticCache => {
