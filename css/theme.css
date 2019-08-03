@@ -244,7 +244,7 @@ abbr {
 
 .submenu__item > a:hover {
     color: #ffffff;
-    text-decoration: underline;
+    background-color: #584661;
 }
 
 .masonry-grid {

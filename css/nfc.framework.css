@@ -1353,17 +1353,19 @@ input.menu__container-input {
 
 .submenu__label {
     font-size: 1rem;
-    margin: 20px 25px 30px 25px;
+    margin: 1rem;
 }
 
 .submenu__item {
-    margin: 10px 25px;
+    margin: 0;
 }
 
 .menu a:link, .menu a:visited {
     color: #ffffff;
     text-decoration: none;
     display: block;
+    padding: 8px 18px;
+    transition: .3s ease background
 }
 
 .menu__item > a:link, .menu__item > a:visited {
@@ -1372,8 +1374,8 @@ input.menu__container-input {
 	color: #ffffff;
 }
 
-.submenu__item > a:hover {
-	color: #00E2FF;
+.submenu__item > a:hover, .submenu__item > a:focus {
+	background-color: #584661;
 }
 
 .menu__item:hover, .menu__item:focus, .menu__item--active {
