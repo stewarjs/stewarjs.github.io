@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Earnings and Leave Statement | My EPP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#4e4653">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="My EPP">
+    <link rel="apple-touch-icon" href="/img/app-icons/512.png">
+    <link href="/css/nfc.framework.css" type="text/css" rel="stylesheet">
+    <link href="/css/theme.css" type="text/css" rel="stylesheet">
+    <style>
+    .earnings-statement {
+        list-style: none;
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .earnings-statement__item {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        padding: 1rem;
+        border-bottom: 1px solid #e1e1e1;
+        justify-content: flex-end;
+    }
+
+    .earning-statement__item__info:first-of-type {
+        margin: 0 auto 0 0;
+    }
+
+    .earnings-statement__item__icon {
+        margin: 0 1rem 0 0;
+        width: 40px;
+        height: 40px;
+        padding: 7px;
+        fill: #ffffff;
+        background-color: #1bbf78;
+        border-radius: 90%;
+        flex-shrink: 0;
+        overflow: visible;
+        box-shadow: 0 3px 11px -3px rgb(88, 88, 88);
+    }
+
+    .earning-statement__item__info__data:first-of-type {
+        color: #767676;
+    }
+
+    .earning-statement__item__info__data:last-child {
+        color: #000000;
+    }
+    .earnings-statement__item--deduction .earning-statement__item__info:last-of-type .earning-statement__item__info__data:last-child {
+        color: #c12426;
+    }
+    </style>
+</head>
+<body>
+	<a href="#nav" class="skip-content" id="skipheader">Skip to Navigation</a>
+    <a href="#main" class="skip-content" id="skipnav">Skip to Main Content</a>
+	<header class="header">
+		<h1 class="header__logo align--left">
+			<svg class="logo__icon" viewBox="0 0 24 24" role="presentation">
+				<path fill="#FBFBFB" d="M9.248,11.601c0.45,0.313,1.05,0.313,1.5,0l9.088-5.281c0.236-0.164,0.21-0.518-0.048-0.646l-9.205-3.537
+					c-0.368-0.183-0.802-0.183-1.17,0L0.208,5.674C-0.05,5.801-0.076,6.156,0.16,6.32L9.248,11.601z M19.788,10.811l-2.486-1.233
+					l-5.725,3.327c-0.469,0.309-1.014,0.471-1.579,0.471s-1.11-0.163-1.579-0.471L2.698,9.576l-2.49,1.234
+					c-0.258,0.128-0.284,0.482-0.048,0.646l9.088,6.309c0.45,0.313,1.05,0.313,1.5,0l9.088-6.309
+					C20.072,11.293,20.046,10.939,19.788,10.811z"/>
+			</svg>
+			<span class="logo__text">My EPP</span>
+	   </h1>
+	   <div class="header__menu">
+
+			<select id="dd__menu" data-update="false" data-icon="JH">
+				<option value="" selected disabled>Joseph Q. Harley</option>
+				<option value="home" data-href="/main.html" data-svg="framework_svg_home">Home</option>
+				<option value="calendar" data-href="/calendar/epp.php" data-svg="framework_svg_calendar">Payroll Calendar</option>
+				<option value="settings" data-svg="framework_svg_settings" data-href="settings.html">Settings</option>
+				<option value="contact" data-svg="framework_svg_mail">Contact</option>
+				<option value="help" data-svg="framework_svg_help">Help</option>
+				<option value="logout" class="custom-select__divider" data-svg="framework_svg_logout">Logout</option>
+			</select>
+
+		</div>
+
+	</header>
+	<nav id="nav" class="menu__container">
+	   <dl class="menu" role="menu">
+                <dt role="menuitem" aria-expanded="false" class="menu__item" tabindex="0"><svg class="icon" role="presentation"><use xlink:href="#framework_svg_info" /></svg><span class="menu__item__label">Benefits</span></dt>
+                <dd>
+                	<dl role="menu" class="submenu">
+                    	<dt class="submenu__label">Benefits</dt>
+                        	<dd class="submenu__item"><a href="#">Benefits Statement</a></dd>
+							<dd class="submenu__item"><a href="#">Leave</a></dd>
+                            <dd class="submenu__item"><a href="#">Thrift Savings Plan</a></dd>
+							<dd class="submenu__item"><a href="#">TSP Catchup</a></dd>
+                    </dl>
+                </dd>
+                
+                <dt role="menuitem" aria-expanded="false" class="menu__item" tabindex="0"><svg class="icon" role="presentation"><use xlink:href="#framework_svg_payment" /></svg><span class="menu__item__label">Financial</span></dt>
+                <dd>
+                	<dl role="menu" class="submenu">
+                    	<dt class="submenu__label">Financial</dt>
+							<dd class="submenu__item"><a href="#">Debt Managment</a></dd>
+                        	<dd class="submenu__item"><a href="#">Direct Deposit</a></dd>
+							<dd class="submenu__item"><a href="#">Discretionary Allotments</a></dd>
+                            <dd class="submenu__item"><a href="index.html"><abbr title="Earnings and Leave">E&amp;L</abbr> Statement</a></dd>
+                            <dd class="submenu__item"><a href="#">Financial Allotments</a></dd>
+                            <dd class="submenu__item"><a href="#">OGE-278</a></dd>
+                            <dd class="submenu__item"><a href="#">Travel</a></dd>
+                            <dd class="submenu__item"><a href="#">W-2</a></dd>
+                    </dl>
+                </dd>
+                
+                <dt role="menuitem" aria-expanded="false" class="menu__item" tabindex="0"><svg class="icon" role="presentation"><use xlink:href="#framework_svg_benefits" /></svg><span class="menu__item__label">Insurance</span></dt>
+                <dd>
+                	<dl role="menu" class="submenu">
+                    	<dt class="submenu__label">Insurance</dt>
+                        	<dd class="submenu__item"><a href="#">Health Insurance</a></dd>
+                            <dd class="submenu__item"><a href="#">Health Savings Account</a></dd>
+                            <dd class="submenu__item"><a href="#">1095-C</a></dd>
+                    </dl>
+                </dd>
+
+                <dt role="menuitem" aria-expanded="false" class="menu__item" tabindex="0"><svg class="icon" role="presentation"><use xlink:href="#framework_svg_money" /></svg><span class="menu__item__label">Taxes</span></dt>
+                <dd>
+                	<dl role="menu" class="submenu">
+                    	<dt class="submenu__label">Taxes</dt>
+                        	<dd class="submenu__item"><a href="#">Federal Tax (W-4)</a></dd>
+                            <dd class="submenu__item"><a href="#">State Tax</a></dd>
+                    </dl>
+                </dd>
+                
+                
+		</dl>
+	</nav>
+	<main class="layout--two-column" id="main">
+		<div class="page__header">
+			<h2 class="heading--small">Latest <abbr title="Earnings and Leave">E&amp;L</abbr> Statement</h2>
+            <button class="button button--gray button--has-icon-left"><svg class="icon button--icon" role="presentation"><use xlink:href="#framework_svg_calendar" /></svg> <span>Pay Period 12, 2018</span></button>
+		</div>
+		<!--
+        <ul class="latest-EL latest-EL--details">
+            <li><span class="latest-EL__property"><svg class="latest-EL__icon" role="presentation"><use xlink:href="#framework_svg_money" /></svg> Latest Salary</span> <span class="latest-EL__value">$41,377.00 at Grade 07 Step 03</span></li>
+            <li><span class="latest-EL__property"><svg class="latest-EL__icon" role="presentation"><use xlink:href="#framework_svg_payment" /></svg> Gross Payment</span> <span class="latest-EL__value">$1,586.40</span></li>
+            <li><span class="latest-EL__property"><svg class="latest-EL__icon" role="presentation"><use xlink:href="#framework_svg_payment" /></svg> Net Payment</span> <span class="latest-EL__value">$415.93</span></li>
+            <li><span class="latest-EL__property"><svg class="latest-EL__icon latest-EL__icon--blue" role="presentation"><use xlink:href="#framework_svg_calendar" /></svg> Dates Covered</span> <span class="latest-EL__value">06/10/2018 to 06/23/2018</span></li>
+            <li><span class="latest-EL__property"><svg class="latest-EL__icon latest-EL__icon--blue" role="presentation"><use xlink:href="#framework_svg_calendar" /></svg> Official Pay Date</span> <span class="latest-EL__value">07/05/2018</span></li>
+        </ul>
+        -->
+        <div class="earnings-statement-summary">
+            <ul class="earnings-statement">
+                <li class="earnings-statement__item">
+                    <div class="earning-statement__item__info">
+                        <div class="earning-statement__item__info__data">Total Hours this PP</div>
+                    </div>
+                    <div class="earning-statement__item__info">
+                        <div class="earning-statement__item__info__data">80.00 Hours</div>
+                    </div>
+                </li>
+                <li class="earnings-statement__item">
+                    <div class="earning-statement__item__info">
+                        <div class="earning-statement__item__info__data">Gross Pay this PP</div>
+                    </div>
+                    <div class="earning-statement__item__info">
+                        <div class="earning-statement__item__info__data">$1,571.53</div>
+                    </div>
+                </li>
+                <li class="earnings-statement__item earnings-statement__item--deduction">
+                    <div class="earning-statement__item__info">
+                        <div class="earning-statement__item__info__data">Total Deductions</div>
+                    </div>
+                    <div class="earning-statement__item__info">
+                        <div class="earning-statement__item__info__data">($467.47)</div>
+                    </div>
+                </li>
+                <li class="earnings-statement__item">
+                    <div class="earning-statement__item__info">
+                        <div class="earning-statement__item__info__data">Net Pay this PP</div>
+                    </div>
+                    <div class="earning-statement__item__info">
+                        <div class="earning-statement__item__info__data">$1,104.06</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ul class="earnings-statement">
+            <li class="earnings-statement__item">
+                <svg class="earnings-statement__item__icon" role="presentation"><use xlink:href="#framework_svg_payment" /></svg>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">Code 01</div>
+                    <div class="earning-statement__item__info__data">Regular Time</div>
+                </div>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">79.25 Hours</div>
+                    <div class="earning-statement__item__info__data">$1,571.53</div>
+                </div>
+            </li>
+            <li class="earnings-statement__item earnings-statement__item--deduction">
+                <svg class="earnings-statement__item__icon" style="background-color: #2496c1;" role="presentation"><use xlink:href="#framework_svg_clock" /></svg>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">Code 61</div>
+                    <div class="earning-statement__item__info__data">Annual Leave</div>
+                </div>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">(0.75 Hours)</div>
+                </div>
+            </li>
+            <li class="earnings-statement__item earnings-statement__item--deduction">
+                <svg class="earnings-statement__item__icon" style="background-color: #2496c1;" role="presentation"><use xlink:href="#framework_svg_info" /></svg>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">Code 75</div>
+                    <div class="earning-statement__item__info__data">Retirement</div>
+                </div>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">($12.69)</div>
+                </div>
+            </li>
+            <li class="earnings-statement__item earnings-statement__item--deduction">
+                <svg class="earnings-statement__item__icon" style="background-color: #2496c1;" role="presentation"><use xlink:href="#framework_svg_info" /></svg>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">Code 75</div>
+                    <div class="earning-statement__item__info__data">TSP-FERS</div>
+                </div>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">($126.91)</div>
+                </div>
+            </li>
+            <li class="earnings-statement__item earnings-statement__item--deduction">
+                <svg class="earnings-statement__item__icon" style="background-color: #c12426;" role="presentation"><use xlink:href="#framework_svg_money" /></svg>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">Code 76</div>
+                    <div class="earning-statement__item__info__data">Social Security</div>
+                </div>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">($64.95)</div>
+                </div>
+            </li>
+            <li class="earnings-statement__item earnings-statement__item--deduction">
+                <svg class="earnings-statement__item__icon" style="background-color: #c12426;" role="presentation"><use xlink:href="#framework_svg_money" /></svg>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">Code 77</div>
+                    <div class="earning-statement__item__info__data">Federal Tax Exempts S01</div>
+                </div>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">($163.12)</div>
+                </div>
+            </li>
+            <li class="earnings-statement__item earnings-statement__item--deduction">
+                <svg class="earnings-statement__item__icon" style="background-color: #c12426;" role="presentation"><use xlink:href="#framework_svg_money" /></svg>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">Code 78</div>
+                    <div class="earning-statement__item__info__data">State Tax LA Exempts S01</div>
+                </div>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">($40.39)</div>
+                </div>
+            </li>
+            <li class="earnings-statement__item earnings-statement__item--deduction">
+                <svg class="earnings-statement__item__icon" style="background-color: #2496c1;" role="presentation"><use xlink:href="#framework_svg_benefits" /></svg>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">Code 81</div>
+                    <div class="earning-statement__item__info__data">FEHBA Enroll Code 314</div>
+                </div>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">($39.99)</div>
+                </div>
+            </li>
+            <li class="earnings-statement__item earnings-statement__item--deduction">
+                <svg class="earnings-statement__item__icon" style="background-color: #c12426;" role="presentation"><use xlink:href="#framework_svg_money" /></svg>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">Code 97</div>
+                    <div class="earning-statement__item__info__data">Medicare Tax Withheld</div>
+                </div>
+                <div class="earning-statement__item__info">
+                    <div class="earning-statement__item__info__data">($22.42)</div>
+                </div>
+            </li>
+        </ul>
+	</main>
+    <footer id="footer" class="footer">
+        <ul class="footer__menu">
+			<li class="footer__menu__item"><a href="https://nfc.usda.gov/">NFC Web Site</a></li>
+            <li class="footer__menu__item"><a href="https://nfc.usda.gov/AdditionalResources/accessibility.php" target="_blank">Accessibility</a></li>
+            <li class="footer__menu__item"><a href="https://www.nfc.usda.gov/AdditionalResources/privacy_policy.php">Privacy Policy</a></li>
+            <li class="footer__menu__item"><a href="https://www.nfc.usda.gov/AdditionalResources/information_quality.php" target="_blank">Information Quality</a></li>
+            <li class="footer__menu__item"><a href="https://www.usda.gov" target="_blank">USDA</a></li>
+            <li class="footer__menu__item"><a href="http://www.usa.gov" target="_blank">USA.gov</a></li>
+	        <li class="footer__menu__item"><a href="https://www.whitehouse.gov" target="_blank">Whitehouse.gov</a></li>
+        </ul>
+
+    </footer>
+	<script src="/js/jquery-3.4.1.min.js"></script>
+	<script src="/js/nfc.framework.js"></script>
+    <script src="/js/epp.js"></script>
+</body>
+</html>
