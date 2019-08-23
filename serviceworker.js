@@ -1,4 +1,4 @@
-const version = 'V0.3';
+const version = 'V0.4';
 const staticCache = version + 'staticfiles';
 
 /* ==============================================
