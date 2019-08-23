@@ -1,5 +1,5 @@
 /* debugging purposes only */
-$('.footer').append('<p class="align--center" style="color:#68696A;font-size:.8rem;">Version 0.2</p>');
+$('.footer').append('<p class="align--center" style="color:#68696A;font-size:.8rem;">Version 0.4</p>');
 
 $('#dd__menu, #allotment_schedule').DropDown();
 $( "#wgi" ).on('click', function(event) {
